@@ -17,12 +17,10 @@ const Topbar = () => {
       <ul className="flex gap-8">
         <li>
           <Link href="/cart">
-            <Link href="/cart">
-              <span className=" bg-red-500 absolute right-20 top-12 rounded-full w-4 h-4 text-[10px] flex justify-center items-center">
-                {productsInCart.length}
-              </span>
-              <BsFillHandbagFill size={24} />
-            </Link>
+            <span className=" bg-red-500 absolute right-20 top-12 rounded-full w-4 h-4 text-[10px] flex justify-center items-center">
+              {productsInCart.length}
+            </span>
+            <BsFillHandbagFill size={24} />
           </Link>
         </li>
         <li>
