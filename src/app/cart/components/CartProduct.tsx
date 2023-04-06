@@ -13,7 +13,9 @@ const CartProductCard: FC<Product> = (product) => {
   return (
     <div className="border-2 p-4">
       <Link href={`/product/${id}`} className="mb-8 block">
-        <h4>{name}</h4>
+        <h4>
+          {name} <span className="text-purple-400">x 2</span>
+        </h4>
         <p>{price}$</p>
       </Link>
       <Button

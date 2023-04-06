@@ -1,8 +1,8 @@
-import ProductCard from "./components/ProductCard";
+import ProductCard from "../components/ProductCard";
 import { prismaClient } from "../../lib/prisma";
 
 export default async function Home() {
-  const products = await prismaClient.products.findMany({});
+  const products = await prismaClient.product.findMany({});
   return (
     <section>
       <h1 className="text-4xl">Here are our products</h1>

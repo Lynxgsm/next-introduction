@@ -24,7 +24,9 @@ const Topbar = () => {
           </Link>
         </li>
         <li>
-          <FaUserAlt size={24} />
+          <Link href="/product/new">
+            <FaUserAlt size={24} />
+          </Link>
         </li>
       </ul>
     </nav>
