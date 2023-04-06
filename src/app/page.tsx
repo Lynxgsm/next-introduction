@@ -1,4 +1,4 @@
-import ProductCard from "./components/ProductCard";
+import ProductCard from "../components/ProductCard";
 import { prismaClient } from "../../lib/prisma";
 
 export default async function Home() {
