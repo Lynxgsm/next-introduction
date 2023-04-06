@@ -13,3 +13,20 @@ export async function POST(request: Request) {
         message: "success"
     })
 }
+
+export async function PUT(request: Request) {
+    const data = await request.json();
+
+    const updatedProduct = await prismaClient.product.update({
+        where: {
+            id: data.id
+        },
+        data
+    })
+
+    return NextResponse.json({
+        ...updatedProduct,
+        sender: "server",
+        message: "success"
+    })
+}

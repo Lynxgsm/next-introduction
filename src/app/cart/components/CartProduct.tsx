@@ -9,6 +9,7 @@ import { useSnapshot } from "valtio";
 
 const CartProductCard: FC<Product> = (product) => {
   const { id, name, price } = product;
+  
   const { removeProductFromCart } = useSnapshot(states);
   return (
     <div className="border-2 p-4">
